@@ -35,8 +35,30 @@
             integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
             crossorigin="anonymous"></script>
     <!--Solid Navbar-->
-    <script async src="JS/navbarSolid.js"></script>
-
+    <script src="JS/navbarSolid.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000"
+                    },
+                    "button": {
+                        "background": "#ffffff"
+                    }
+                },
+                "theme": "classic",
+                "content": {
+                    "message": "Acest website folosește cookie-uri pentru a vă asigura cea mai bună experiență pe website-ul nostru.",
+                    "dismiss": "Am înțeles!",
+                    "link": "Citește mai mult"
+                }
+            })
+        });
+    </script>
 </head>
 
 <body>
@@ -166,8 +188,6 @@
     </div>
 </div>
 
-<!--Solid Navbar-->
-<script src="JS/navbarSolid.js"></script>
 <!--Google Maps-->
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs6WlUQHls7J-eLDq3rHd3tC_EcCg4E6k&callback=initMap">

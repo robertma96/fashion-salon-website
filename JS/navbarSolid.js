@@ -1,11 +1,1 @@
-$(document).ready(function () {
-// Transition effect for navbar
-    $(window).scroll(function () {
-// checks if window is scrolled more than 50px, adds/removes solid class
-        if ($(this).scrollTop() > 50) {
-            $('.navbar').addClass('solid');
-        } else {
-            $('.navbar').removeClass('solid');
-        }
-    });
-});
+$(document).ready(function(){$(window).scroll(function(){50<$(this).scrollTop()?$('.navbar').addClass('solid'):$('.navbar').removeClass('solid')})});

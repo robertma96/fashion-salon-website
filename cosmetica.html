@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="Description" content="Fashion Salon este situat pe Soseaua Pantelimon 253. In cadrul salonului nostru gasiti o echipa de profesionisiti cu multa experienta, care lucreaza cu cele mai bune produse, totul pentru ca dumneavoastra sa aveti coafura, manichiura, pedichiura si tenul perfecte.
+    <meta name="Description" content="Numar de telefon pentru programari 021 255 61 15. Fashion Salon este situat pe Soseaua Pantelimon 253. In cadrul salonului nostru gasiti o echipa de profesionisiti cu multa experienta, care lucreaza cu cele mai bune produse, totul pentru ca dumneavoastra sa aveti coafura, manichiura, pedichiura si tenul perfecte.
     Fashion Salon - Salon de înfrumusețare - Coafor - Frizerie - Cosmetică - Manichiură & Pedichiură - Solar - Machiaj - Preturi - Calitate">
     <meta name="keywords"
           content="Fashion Salon, Coafor, Frizerie, Cosmetica, Manichiura & Pedichiura, Solar, Pantelimon, Preturi, Vopsea, Londa, Keune, Joico, Nioxin, Good Haird Day, Oja, OPI, Mesauda, Ergoline">
@@ -20,9 +20,6 @@
     <!--Custom CSS-->
     <link rel="stylesheet" href="CSS/style_index.css">
 
-
-    <!--Mobile Slide-->
-    <script async src="JS/hammer.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -34,6 +31,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
             integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
             crossorigin="anonymous"></script>
+    <!--Lazy Images-->
+    <script async type="text/javascript"
+            src="//cdn.jsdelivr.net/gh/eisbehr-/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <!--Solid Navbar-->
+    <script async src="JS/navbarSolid.js"></script>
 </head>
 
 <body>
@@ -478,7 +480,7 @@
                         </label>
                     </div>
                 </td>
-                <td class="pretserviciu">35 lei</td>
+                <td class="pretserviciu">150 lei</td>
             </tr>
             <tr>
                 <td>
@@ -588,19 +590,26 @@
         <h2>Partenerii noștri</h2>
         <div class="row primul">
             <div class="col">
-                <img class="rounded img-fluid lazy" alt="Vopsea Keune" data-src="images/" src="">
+                <img class="rounded img-fluid lazy" alt="Academie Scientifique De Beaute"
+                     data-src="images/academie_scientifique_de_beaute_LOGO.jpg" src="">
             </div>
             <div class="col">
-                <img class="rounded img-fluid lazy" alt="Vopsea Londa" data-src="images/" src="">
+                <img class="rounded img-fluid lazy" alt="Dermedics Tratament" data-src="images/DERMEDICS_LOGO.jpg" src="">
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <img class="rounded img-fluid lazy" alt="Good Hair Day" data-src="images/" src="">
+                <img class="rounded img-fluid lazy" alt="Filorga" data-src="images/FILORGA_LOGO.jpg" src="">
             </div>
             <div class="col">
-                <img class="rounded img-fluid lazy" alt="Tratament păr Joico" data-src="images/" src="">
+                <img class="rounded img-fluid lazy" alt="Guinot" data-src="images/GUINOT_LOGO.jpg" src="">
             </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="rounded img-fluid lazy" alt="Sothys" data-src="images/SOTHYS_LOGO.jpg" src="">
+            </div>
+            <div class="col"></div>
         </div>
 
         <div class="line"></div>
@@ -618,28 +627,16 @@
     </div>
 </div>
 
-
-<!--Solid Navbar-->
-<script src="JS/navbarSolid.js"></script>
-
-
+<!--Calculator Pret-->
+<script src="JS/CalculatorPret.js"></script>
 <!--Lazy Loader-->
-<script type="text/javascript" src="//cdn.jsdelivr.net/gh/eisbehr-/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
 <script>
     $(function ($) {
         $("img.lazy").Lazy();
     });
 </script>
-
-
 <!--Back to top-->
 <script async src="JS/BackToTop.js"></script>
-
-
-<!--Calculator Pret-->
-<script async src="JS/CalculatorPret.js"></script>
-
-
 <!--Smooth Scrolling-->
 <script src="JS/jquery.easeScroll.js"></script>
 <script src="JS/SmoothScroll.js"></script>

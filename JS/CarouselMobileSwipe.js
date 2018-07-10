@@ -1,6 +1,7 @@
 var carousel;
 $(document).ready(function () {
     carousel = $(".carousel-item");
+    carousel.itemslide();
 });
 
 

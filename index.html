@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="CSS/style_index.css">
 
 
-    <!--Mobile Slide-->
-    <script async src="JS/hammer.js"></script>
+    <!--&lt;!&ndash;Mobile Slide&ndash;&gt;-->
+    <!--<script async src="JS/hammer.js"></script>-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -193,8 +193,6 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs6WlUQHls7J-eLDq3rHd3tC_EcCg4E6k&callback=initMap">
 </script>
 <script src="JS/GoogleMaps.js"></script>
-<!--Mobile SlideShow Swipe-->
-<script src="JS/CarouselMobileSwipe.js"></script>
 <!--Back to top-->
 <script src="JS/BackToTop.js"></script>
 <!--Lazy Loader-->
@@ -211,6 +209,20 @@
 <!--Smooth Scrolling-->
 <script src="JS/jquery.easeScroll.js"></script>
 <script src="JS/SmoothScroll.js"></script>
+<!--&lt;!&ndash;Mobile SlideShow Swipe&ndash;&gt;-->
+<!--<script src="JS/CarouselMobileSwipe.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.js"></script>
+<script>
+    if ($('.carousel').length) {
+        $('.carousel').carousel({interval: 7000, pause: false});
+        $(".carousel").swipe({
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+            }, allowPageScroll: "vertical"
+        });
+    }
+</script>
 
 </body>
 </html>

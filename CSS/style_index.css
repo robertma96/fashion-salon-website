@@ -28,6 +28,14 @@ p {
     margin-bottom: 20px;
 }
 
+.navbar-brand {
+    padding: 0 !important;
+}
+
+.logo {
+    height: 40px;
+}
+
 p.pretTotal {
     font-size: 1.9em;
     font-weight: 400;

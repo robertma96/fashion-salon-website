@@ -35,13 +35,36 @@
     <script async type="text/javascript"
             src="//cdn.jsdelivr.net/gh/eisbehr-/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
     <!--Solid Navbar-->
-    <script src="JS/navbarSolid.js"></script>
+    <script async src="JS/navbarSolid.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000"
+                    },
+                    "button": {
+                        "background": "#ffffff"
+                    }
+                },
+                "theme": "classic",
+                "content": {
+                    "message": "Acest website folosește cookie-uri pentru a vă asigura cea mai bună experiență pe website-ul nostru.",
+                    "dismiss": "Am înțeles!",
+                    "link": "Citește mai mult"
+                }
+            })
+        });
+    </script>
 </head>
 
 <body>
 <nav class="shift navbar navbar-dark sticky-top navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="index"><strong>Fashion Salon Logo</strong></a>
+        <a class="navbar-brand" href="index"><img class="img-fluid d-block logo" src="images/FASHION_SALON_LOGO.png" alt="Fashion Salon Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
